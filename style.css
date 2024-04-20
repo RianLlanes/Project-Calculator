@@ -1,0 +1,105 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.layout button {
+    border: 0;
+    border-radius: 10px;
+    width: 50px;
+    height: 50px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    border: solid 1px black;
+    width: 240px;
+    border-radius: 10px;
+}
+
+.resultDisplay {
+    background-color: #fff0d2;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.display {
+    display: flex;
+    align-content: center;
+    justify-content: right;
+
+}
+
+.result {
+    font-size: 30px;
+    display: flex;
+    align-content: center;
+    justify-content: right;
+    margin-bottom: 10px;
+}
+
+.back {
+    display: flex;
+    justify-content: flex-end;
+    background-color: #ffffdd;
+    padding: 10px;
+}
+
+.back button {
+    /* background-color: transparent;
+    background-repeat: no-repeat;
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+    outline: none; */
+}
+
+
+.line {
+    background-color: black;
+    height: 2.5px;
+}
+
+.layout, .numberLayout, .equations ,.numberLayout div {
+    gap: 5px;
+}
+
+.layout {
+    background-color: #ffffdd;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 0 10px 0;
+}
+
+.numberLayout {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.numberLayout div{
+    display: flex;
+}
+
+.numberLayout button{
+    background-color: #f5ce9f;
+}
+
+.numberLayout1 button{
+    background-color: #ffe3aa;
+}
+
+.equations {
+    display: flex;
+    flex-direction: column;
+}
+
+.equations button{
+    background-color: #f1af60;
+}
+
+
+
