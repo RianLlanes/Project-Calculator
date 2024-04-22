@@ -183,17 +183,45 @@ function operateAndDisplay() {
     secondNum = '';
 }
 
-// MoreZombies DL Done
-// SimpleStatus DL Done
-// Descriptive DL Done
-// Extra Map Symbols DL Done
-// Maps Legend UI DL Done
-// FuelSide Indicator DL Done
-// Dylans Zombie Loot DL Done
-// Standardized DL
-// Become Desensitized DL Done
-// Paw Low Loot (41.50)DL Done
-// Raven Creeks Spawn DL Done
-// Snake's Mod Pack 41.71 Branch DL Done
-// Combat Text (B40+B41) DL Done
-// Paw Low Patch (build 41.77+ whatever) DL Done
+
+function clickButtonByDataValue(value) {
+    const button = document.querySelector(`[data-value="${value}"]`);
+    if (button) {
+        button.click();
+    }
+}
+
+document.addEventListener('keydown', (event) => {
+
+    // Get the key that was pressed
+    const key = event.key;
+    console.log(key)
+    
+    // Map keyboard keys to corresponding button clicks
+    // Inside the key event switch statement:
+    switch (key) {
+        case '0':
+        case '1':
+        case '2':
+        case '3':
+        case '4':
+        case '5':
+        case '6':
+        case '7':
+        case '8':
+        case '9':
+        case '+':
+        case '-':
+        case '*':
+        case '/':
+        case '.':
+        case 'Enter':
+        case 'Backspace':
+        case 'Escape':
+            clickButtonByDataValue(key);
+            break;
+        default:
+            // Ignore other keys
+            break;
+    }
+    })
